@@ -18,4 +18,8 @@
     <extensions defaultExtensionNs="JavaScript.JsonSchema">
         <ProviderFactory implementation="io.github.heraclessupport.SchemaProvider"/>
     </extensions>
+
+    <change-notes><![CDATA[
+        <p>Added a custom FileIcon using FileIconProvider for json files in "heracles/quests".</p>
+        ]]></change-notes>
 </idea-plugin>
