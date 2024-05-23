@@ -5,23 +5,20 @@ plugins {
 }
 
 group = "io.github"
-version = "1.0.0"
+version = "1.0.2"
 
 repositories {
     mavenCentral()
 }
 
-// Configure Gradle IntelliJ Plugin
-// Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
     version.set("2023.2.5")
-    type.set("IC") // Target IDE Platform
+    type.set("IC")
 
-    plugins.set(listOf(/* Plugin Dependencies */))
+    plugins.set(listOf())
 }
 
 tasks {
-    // Set the JVM compatibility versions
     withType<JavaCompile> {
         sourceCompatibility = "17"
         targetCompatibility = "17"

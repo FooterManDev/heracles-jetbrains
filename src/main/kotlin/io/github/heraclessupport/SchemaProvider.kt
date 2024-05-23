@@ -5,7 +5,6 @@ import com.intellij.openapi.vfs.VirtualFile
 import com.jetbrains.jsonSchema.extension.JsonSchemaFileProvider
 import com.jetbrains.jsonSchema.extension.JsonSchemaProviderFactory
 import com.jetbrains.jsonSchema.extension.SchemaType
-import org.jetbrains.annotations.Nls
 
 class SchemaProvider : JsonSchemaProviderFactory {
     override fun getProviders(project: Project): List<JsonSchemaFileProvider> {
