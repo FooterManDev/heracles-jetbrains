@@ -24,7 +24,7 @@
              "type": "string",
              "enum": ["POINTS", "LEVEL"]
            },
-           "collectionType": {
+           "collection": {
              "type": "string",
              "enum": ["MANUAL", "AUTOMATIC", "CONSUME"]
            },
@@ -86,11 +86,11 @@
            }
          },
          "then": {
-           "required": ["xpType", "amount", "collectionType"],
+           "required": ["xpType", "amount", "collection"],
            "not": {
               "properties": {
                 "amount": {"type": "number"},
-                "collectionType": {"type": "number"}
+                "collection": {"type": "number"}
               }
            }
          },
@@ -114,7 +114,7 @@
                }
              },
              "then": {
-               "required": ["amount", "collectionType"]
+               "required": ["amount", "collection"]
              }
            }
          }
